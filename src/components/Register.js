@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Register extends Component {
   render() {
     return (<div id="register">
-      {/* your code here */}
+    {this.props.reservations.map(ob=><div>{ob.day}@{ob.time}</div>)}
     </div>)
   }
 }
